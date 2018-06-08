@@ -114,6 +114,27 @@ public class ArvoreAVL {
     }
 
     /**
+     * Recebe uma chave e faz uma busca binária para tentar encontrá-la nos nós. Se encontrado, retorna true,
+     * senão, retorna false.
+     *
+     * @param chave: chave do nó sendo buscado
+     */
+    public boolean buscar(int chave) {
+        if (this.raiz == null)
+            return false;
+
+        NoAVL filho = this.raiz;
+        while (filho != null) {
+            NoAVL no = filho;
+            filho = chave >= no.getChave() ? no.getDireita() : no.getEsquerda();
+            if (chave == no.getChave()) {
+                return true;
+            }
+        }
+        return false;
+    }
+
+    /**
      * Recebe um nó chama função para recálculo de altura e balanceamento e, de acordo
      * com seu balanceamento, faz a rotação pertinente. Se o nó tiver um nó pai, rebalanceia
      * seu pai também.

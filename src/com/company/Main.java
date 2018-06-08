@@ -20,6 +20,20 @@ public class Main {
         System.out.println();
         arvore.imprimeArvoreInOrder();
 
+        System.out.println();
+        System.out.println("Buscando valor 1...");
+        System.out.println(arvore.buscar(1));
+        System.out.println();
+
+        System.out.println();
+        System.out.println("Buscando valor 7...");
+        System.out.println(arvore.buscar(7));
+        System.out.println();
+
+        System.out.println();
+        System.out.println("Buscando valor 15...");
+        System.out.println(arvore.buscar(15));
+        System.out.println();
 
         System.out.println();
         System.out.println("Removendo valor 10...");
