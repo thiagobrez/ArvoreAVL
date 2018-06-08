@@ -41,5 +41,33 @@ public class Main {
         System.out.println();
         arvore.imprimeArvoreInOrder();
 
+        System.out.println();
+        System.out.println("Inserindo valor 12...");
+        arvore.inserir(12);
+
+        System.out.println();
+        System.out.print("Balanceamento (in-order): ");
+        System.out.println();
+        arvore.imprimeArvoreInOrder();
+
+        System.out.println();
+        System.out.println("Inserindo valor 50...");
+        arvore.inserir(50);
+
+        System.out.println();
+        System.out.print("Balanceamento (in-order): ");
+        System.out.println();
+        arvore.imprimeArvoreInOrder();
+
+        System.out.println();
+        System.out.println("Tentando remover valor 40 (inexistente)...");
+        arvore.remover(40);
+        System.out.println("Nada acontece.");
+
+        System.out.println();
+        System.out.print("Balanceamento (in-order): ");
+        System.out.println();
+        arvore.imprimeArvoreInOrder();
+
     }
 }

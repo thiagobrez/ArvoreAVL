@@ -265,9 +265,7 @@ public class ArvoreAVL {
     private void imprimeArvoreInOrderRecursivo(NoAVL no) {
         if (no != null) {
             imprimeArvoreInOrderRecursivo(no.getEsquerda());
-            System.out.println();
             System.out.println("Chave: " + no.getChave() + " | " + "Balanceamento: " + no.getBalanceamento());
-            System.out.println();
             imprimeArvoreInOrderRecursivo(no.getDireita());
         }
     }
